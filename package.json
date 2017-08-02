@@ -1,0 +1,26 @@
+{
+  "name": "gulp-new",
+  "version": "1.0.0",
+  "description": "This will contain a movie search webpage utilizing tmdb. Search for your favorite movies by title!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuasextondws2/sexton-joshua-dws2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuasextondws2/sexton-joshua-dws2/issues"
+  },
+  "homepage": "https://github.com/joshuasextondws2/sexton-joshua-dws2#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "save-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
+  }
+}
