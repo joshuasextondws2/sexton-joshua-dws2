@@ -42,3 +42,92 @@ h2{
 	width: 20rem;
 	margin-top: 50px;
 }
+h3{
+	background-color: $primary-color;
+	width: 11rem;
+	margin-bottom: 0rem;
+	margin-top: 6px;
+	margin-left: 16rem;
+	height: 1rem;
+	font-size: 12px;
+	}
+h1{
+	float: left;
+}
+nav{
+	float: right;
+	padding-left: 1rem;
+	font: 10px;
+	margin-top: 0;
+}
+nav li{
+	display: inline-block;
+	padding: 0rem .5rem 0rem 0rem;
+	color: $copy-color;
+	font: 10px;
+	text-decoration: nones;
+
+a{
+	display: block;
+	color: $copy-color;
+	font-size: 10px;
+	text-decoration: none;
+	
+	}
+}
+a:hover{
+	color: $secondary-color;
+}
+header::after{
+	content: " ";
+	display: block;
+	clear: both;
+}
+footer{
+	text-align: center;
+	background-color: $primary-color;
+}
+input{
+	background-image: url("../images/search.png");
+	background-repeat: no-repeat;
+	background-position: 98% 8px;
+	background-size: 20px 20px;
+	height: 30px;
+	width: 520px;
+	background-color: #EEEEEE;
+	margin-top: 0rem; 
+	margin-left: 16rem;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+results li,
+results p{
+	text-align: center;
+}
+ #results li{
+	width: calc(100%/3);
+	display: inline-block;
+	float: left;
+}
+results::after{
+	content: " ";
+	display: block;
+	clear: both;
+}
+#results ul:nth-of-type(3n+1),
+#results > p:last-child{
+	clear: left;
+}
+#results > p{
+	font-size: 14px;
+	@include brs(0,0,0,0);
+	padding: .5em 1em;
+	background-color: $secondary-color;
+	width: 130px;
+	color: $primary-color;
+	margin: 12rem;
+	margin-bottom: 2rem;
+	margin-top: 3rem;
+}
+
+
