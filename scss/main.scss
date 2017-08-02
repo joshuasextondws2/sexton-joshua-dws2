@@ -26,3 +26,19 @@ body{
 	background-repeat: no-repeat;
 	background-size: 100% 30%;
 }
+header,
+search,
+#results{
+	width: 80%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+h4{
+	color: $secondary-color;
+}
+h2{
+	background-color: $primary-color;
+	color: $neutral-color;
+	width: 20rem;
+	margin-top: 50px;
+}

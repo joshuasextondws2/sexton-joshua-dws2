@@ -10,3 +10,19 @@ body {
   background-image: url("../images/lloyd-dirks-74271.jpg");
   background-repeat: no-repeat;
   background-size: 100% 30%; }
+
+header,
+search,
+#results {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+h4 {
+  color: #990000; }
+
+h2 {
+  background-color: #111111;
+  color: white;
+  width: 20rem;
+  margin-top: 50px; }
