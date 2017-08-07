@@ -1,3 +1,8 @@
+header, search, #results {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto; }
+
 html {
   background-color: white;
   font-family: helvetica, Arial, san-serif;
@@ -10,13 +15,6 @@ body {
   background-image: url("../images/lloyd-dirks-74271.jpg");
   background-repeat: no-repeat;
   background-size: 100% 30%; }
-
-header,
-search,
-#results {
-  width: 80%;
-  max-width: 1100px;
-  margin: 0 auto; }
 
 h4 {
   color: #990000; }
@@ -32,12 +30,57 @@ h3 {
   width: 11rem;
   margin-bottom: 0rem;
   margin-top: 6px;
-  margin-left: 16rem;
+  margin-left: 18rem;
   height: 1rem;
   font-size: 12px; }
 
 h1 {
   float: left; }
+
+input {
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  background-position: 98% 8px;
+  background-size: 20px 20px;
+  height: 30px;
+  width: 520px;
+  background-color: #EEEEEE;
+  margin-top: 0rem;
+  margin-left: 18rem;
+  font-size: 20px;
+  margin-bottom: 20px; }
+
+#results li {
+  text-align: center;
+  width: calc(100%/3);
+  display: inline-block;
+  float: left; }
+
+#results p {
+  text-align: center; }
+
+results::after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+#results ul:nth-of-type(3n+1),
+#results > p:last-child {
+  clear: left; }
+
+#results > p {
+  font-size: 14px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: .5em 1em;
+  background-color: #990000;
+  width: 130px;
+  color: #111111;
+  margin: 28rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
 
 nav {
   float: right;
@@ -60,7 +103,7 @@ nav li {
 a:hover {
   color: #990000; }
 
-header::after {
+header::after, search::after, #results::after {
   content: " ";
   display: block;
   clear: both; }
@@ -68,48 +111,3 @@ header::after {
 footer {
   text-align: center;
   background-color: #111111; }
-
-input {
-  background-image: url("../images/search.png");
-  background-repeat: no-repeat;
-  background-position: 98% 8px;
-  background-size: 20px 20px;
-  height: 30px;
-  width: 520px;
-  background-color: #EEEEEE;
-  margin-top: 0rem;
-  margin-left: 16rem;
-  font-size: 20px;
-  margin-bottom: 20px; }
-
-results li,
-results p {
-  text-align: center; }
-
-#results li {
-  width: calc(100%/3);
-  display: inline-block;
-  float: left; }
-
-results::after {
-  content: " ";
-  display: block;
-  clear: both; }
-
-#results ul:nth-of-type(3n+1),
-#results > p:last-child {
-  clear: left; }
-
-#results > p {
-  font-size: 14px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  padding: .5em 1em;
-  background-color: #990000;
-  width: 130px;
-  color: #111111;
-  margin: 12rem;
-  margin-bottom: 2rem;
-  margin-top: 3rem; }
