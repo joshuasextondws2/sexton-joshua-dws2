@@ -27,18 +27,18 @@ search{
 	@extend header;	
 }
 
-h4{
+li h3{
 	color: $secondary-color;
 }
 
-h2{
+h3{
 	background-color: $primary-color;
 	color: $neutral-color;
 	width: 20rem;
-	margin-top: 50px;
+	margin-top: 14px;
 }
 
-h3{
+h2{
 	background-color: $primary-color;
 	width: 11rem;
 	margin-bottom: 0rem;
@@ -99,4 +99,15 @@ results::after{
 	margin: 28rem;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
+}
+header{
+	@extend %center-element;
+}
+
+search{
+	@extend header;
+}
+
+#results{
+	@extend header;	
 }

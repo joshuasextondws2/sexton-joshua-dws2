@@ -16,16 +16,16 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 30%; }
 
-h4 {
+li h3{
   color: #990000; }
 
-h2 {
+h3 {
   background-color: #111111;
   color: white;
   width: 20rem;
-  margin-top: 50px; }
+  margin-top: 15px; }
 
-h3 {
+h2 {
   background-color: #111111;
   width: 11rem;
   margin-bottom: 0rem;
