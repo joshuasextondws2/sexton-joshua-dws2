@@ -52,11 +52,7 @@ h1{
 	float: left;
 }
 
-input{
-	background-image: url("../images/search.png");
-	background-repeat: no-repeat;
-	background-position: 98% 8px;
-	background-size: 20px 20px;
+#searchField{
 	height: 30px;
 	width: 520px;
 	background-color: #EEEEEE;
@@ -64,6 +60,17 @@ input{
 	margin-left: 18rem;
 	font-size: 20px;
 	margin-bottom: 20px;
+	padding-right: 25px;
+}
+
+#submitSearch{
+	background-image: url("../images/search.png");
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 15px 15px;
+	border: none;
+	margin-left: -25px;
 }
 
 #results {
@@ -91,7 +98,7 @@ results::after{
 
 #results > p{
 	font-size: 14px;
-	@include brs(0,0,0,0);
+	@include brs(1,0,0,0);
 	padding: .5em 1em;
 	background-color: $secondary-color;
 	width: 130px;

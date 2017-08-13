@@ -16,14 +16,14 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 30%; }
 
-li h3{
+li h3 {
   color: #990000; }
 
 h3 {
   background-color: #111111;
   color: white;
   width: 20rem;
-  margin-top: 15px; }
+  margin-top: 14px; }
 
 h2 {
   background-color: #111111;
@@ -37,18 +37,24 @@ h2 {
 h1 {
   float: left; }
 
-input {
-  background-image: url("../images/search.png");
-  background-repeat: no-repeat;
-  background-position: 98% 8px;
-  background-size: 20px 20px;
+#searchField {
   height: 30px;
   width: 520px;
   background-color: #EEEEEE;
   margin-top: 0rem;
   margin-left: 18rem;
   font-size: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-right: 25px; }
+
+#submitSearch {
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: 15px 15px;
+  border: none;
+  margin-left: -25px; }
 
 #results li {
   text-align: center;
@@ -70,7 +76,7 @@ results::after {
 
 #results > p {
   font-size: 14px;
-  border-top-left-radius: 0;
+  border-top-left-radius: 1;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
