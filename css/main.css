@@ -1,118 +1,240 @@
-header, search, #results {
-  width: 80%;
-  max-width: 1100px;
-  margin: 0 auto; }
-
-html {
-  background-color: white;
-  font-family: helvetica, Arial, san-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #CCCCCC;
-  height: 100%; }
-
-body {
-  background-image: url("../images/lloyd-dirks-74271.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 30%; }
-
-li h3 {
-  color: #990000; }
-
-h3 {
-  background-color: #111111;
-  color: white;
-  width: 20rem;
-  margin-top: 14px; }
-
-h2 {
-  background-color: #111111;
-  width: 11rem;
-  margin-bottom: 0rem;
-  margin-top: 6px;
-  margin-left: 18rem;
-  height: 1rem;
-  font-size: 12px; }
-
-h1 {
-  float: left; }
-
-#searchField {
-  height: 30px;
-  width: 520px;
-  background-color: #EEEEEE;
-  margin-top: 0rem;
-  margin-left: 18rem;
-  font-size: 20px;
-  margin-bottom: 20px;
-  padding-right: 25px; }
-
-#submitSearch {
-  background-image: url("../images/search.png");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  background-size: 15px 15px;
-  border: none;
-  margin-left: -25px; }
-
-#results li {
-  text-align: center;
-  width: calc(100%/3);
-  display: inline-block;
-  float: left; }
-
-#results p {
-  text-align: center; }
-
-results::after {
-  content: " ";
-  display: block;
-  clear: both; }
-
-#results ul:nth-of-type(3n+1),
-#results > p:last-child {
-  clear: left; }
-
-#results > p {
-  font-size: 14px;
-  border-top-left-radius: 1;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  padding: .5em 1em;
-  background-color: #990000;
-  width: 130px;
-  color: #111111;
-  margin: 28rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
-
-nav {
-  float: right;
-  padding-left: 1rem;
-  font: 10px;
-  margin-top: 0; }
-
-nav li {
-  display: inline-block;
-  padding: 0rem .5rem 0rem 0rem;
-  color: #CCCCCC;
-  font: 10px;
-  text-decoration: nones; }
-  nav li a {
-    display: block;
+@media (min-width: 375px) {
+  html {
+    background-color: white;
+    font-family: helvetica, Arial, san-serif;
+    font-size: 12px;
+    line-height: 1.5;
     color: #CCCCCC;
+    height: 100%; } }
+
+@media (min-width: 700px) {
+  html {
+    background-color: white;
+    font-family: helvetica, Arial, san-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #CCCCCC;
+    height: 100%; } }
+
+@media (min-width: 375px) {
+  body {
+    background-image: url("../images/lloyd-dirks-74271.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 30%; } }
+
+@media (min-width: 700px) {
+  body {
+    background-image: url("../images/lloyd-dirks-74271.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 30%; } }
+
+@media (min-width: 375px) {
+  header {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 700px) {
+  header {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 375px) {
+  search {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 700px) {
+  search {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 375px) {
+  #results {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 700px) {
+  #results {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 375px) {
+  li h3 {
+    color: #990000; } }
+
+@media (min-width: 700px) {
+  li h3 {
+    color: #990000; } }
+
+@media (min-width: 375px) {
+  h3 {
+    background-color: #111111;
+    color: white;
+    width: 12px;
+    margin-top: 7px; } }
+
+@media (min-width: 700px) {
+  h3 {
+    background-color: #111111;
+    color: white;
+    width: 14px;
+    margin-top: 7px; } }
+
+@media (min-width: 375px) {
+  h2 {
+    background-color: #111111;
+    width: 11rem;
+    margin-bottom: 0rem;
+    margin-top: 6px;
+    margin-left: 18rem;
+    height: 1rem;
+    font-size: 12px; } }
+
+@media (min-width: 700px) {
+  h2 {
+    background-color: #111111;
+    width: 11rem;
+    margin-bottom: 0rem;
+    margin-top: 6px;
+    margin-left: 18rem;
+    height: 1rem;
+    font-size: 16px; } }
+
+@media (min-width: 375px) {
+  h1 {
+    float: left; } }
+
+@media (min-width: 700px) {
+  h1 {
+    float: left; } }
+
+@media (min-width: 375px) {
+  #searchField {
+    height: 15px;
+    width: 200px;
+    background-color: #EEEEEE;
+    margin-top: 0rem;
+    margin-left: 18rem;
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding-right: 25px; } }
+
+@media (min-width: 700px) {
+  #searchField {
+    height: 15px;
+    width: 500px;
+    background-color: #EEEEEE;
+    margin-top: 0rem;
+    margin-left: 18rem;
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding-right: 25px; } }
+
+@media (min-width: 375px) {
+  #submitSearch {
+    background-image: url("../images/search.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 15px 15px;
+    border: none;
+    margin-left: -25px; } }
+
+@media (min-width: 700px) {
+  #submitSearch {
+    background-image: url("../images/search.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 15px 15px;
+    border: none;
+    margin-left: -25px; } }
+
+@media (min-width: 375px) {
+  #results li {
+    text-align: center;
+    width: calc(100%/3);
+    display: inline-block;
+    float: left; }
+  #results p {
+    text-align: center; } }
+
+@media (min-width: 700px) {
+  #results li {
+    text-align: center;
+    width: calc(100%/3);
+    display: inline-block;
+    float: left; }
+  #results p {
+    text-align: center; } }
+
+@media (min-width: 375px) {
+  results::after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 375px) {
+  #results ul:nth-of-type(3n+1),
+  #results > p:last-child {
+    clear: left; } }
+
+@media (min-width: 375px) {
+  #results > p {
     font-size: 10px;
-    text-decoration: none; }
+    border-top-left-radius: 1;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: .5em 1em;
+    background-color: #990000;
+    width: 130px;
+    color: #111111;
+    margin: 28rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem; } }
 
-a:hover {
-  color: #990000; }
+header {
+  margin-left: auto;
+  margin-right: auto; }
 
-header::after, search::after, #results::after {
-  content: " ";
-  display: block;
-  clear: both; }
+search {
+  margin-left: auto;
+  margin-right: auto; }
+
+#results {
+  margin-left: auto;
+  margin-right: auto; }
+
+@media (min-width: 375px) {
+  nav {
+    float: right;
+    padding-left: 1rem;
+    font: 6px;
+    margin-top: 0; } }
+
+@media (min-width: 375px) {
+  nav li {
+    display: inline-block;
+    padding: 0rem .5rem 0rem 0rem;
+    color: #CCCCCC;
+    font: 6px;
+    text-decoration: nones; }
+    nav li a {
+      display: block;
+      color: #CCCCCC;
+      font-size: 6px;
+      text-decoration: none; } }
+
+@media (min-width: 375px) {
+  a:hover {
+    color: #990000; } }
+
+@media (min-width: 375px) {
+  header::after {
+    content: " ";
+    display: block;
+    clear: both; } }
 
 footer {
   text-align: center;

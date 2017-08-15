@@ -1,35 +1,43 @@
 //navigation
 
 nav{
-	float: right;
-	padding-left: 1rem;
-	font: 10px;
-	margin-top: 0;
+	@media(min-width: 375px){
+		float: right;
+		padding-left: 1rem;
+		font: 6px;
+		margin-top: 0;
+	}
 }
 
 nav li{
+	@media(min-width: 375px){
 	display: inline-block;
 	padding: 0rem .5rem 0rem 0rem;
 	color: $copy-color;
-	font: 10px;
+	font: 6px;
 	text-decoration: nones;
 	
 
 	a{
 		display: block;
 		color: $copy-color;
-		font-size: 10px;
+		font-size: 6px;
 		text-decoration: none;
 	
+	}
 	}
 }
 
 a:hover{
-	color: $secondary-color;
+	@media(min-width: 375px){
+		color: $secondary-color;
+}
 }
 
 header::after{
+	@media(min-width: 375px){
 	content: " ";
 	display: block;
 	clear: both;
+}
 }

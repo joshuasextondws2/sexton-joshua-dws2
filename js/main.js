@@ -1,19 +1,18 @@
-//variables for the event listener 
-var search = document.querySelector('#search'); 
+const submit= document.querySelector('#submitSearch');
 
-//variable for user input
-var userInput= document.querySelector("#search");
+const userInput= document.querySelector('#searchField');
 
-//listen for the form blur
-search.addEventListener('submit', function(e){
+//listen for the submit event
+submit.addEventListener('submit', function(e){
 
 	e.preventDefault();
-
-	//variable from input
+	
+	//variable for user input
 	var userSearch = userInput.value;
-
+	
 	//build api search query
-	var api = 'https://api.themoviedb.org/3/movie/550?api_key=53b5edee243439f6f61a407ad6114785&query='+userSearch;
+	var api = 'https://api.themoviedb.org/3/search/movie?api_key=53b5edee243439f6f61a407ad6114785&query='+userSearch; 
+	
 
 	//instantiate new request
 	var request = new XMLHttpRequest();
@@ -33,15 +32,28 @@ search.addEventListener('submit', function(e){
 		//parse our data
 		var data = JSON.parse(request.responseText);
 
-		//variable for the h4 within the list
-		element = document.querySelector('#results li');
+		console.log(data);
 
-		//insert the returned results
-		element.querySelectorAll('h4')[0].innerHTML = data.results[0].title;
-		element.quesySelectorAll('p')[0].innerHTML = data.results[0].release_date;
 
+}else{
+console.log('response error', request)
+
+
+}
+};
+
+
+
+
+request.onerror = function(){
+	
+	console.log('connection error')
+
+} 
+
+
+
+request.send();
 
 }
 
-}
-}
